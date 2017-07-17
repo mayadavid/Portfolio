@@ -3,9 +3,10 @@
 <body>
 
 <h1 id="demo">Hello, my name is Ashley Lagares<br>and I am a high school student</h1>
+
 <script>
-document.getElementById("demo").addEventListener("mouseover", mouseOver);
-document.getElementById("demo").addEventListener("mouseout", mouseOut);
+document.getElementById("demo").onmouseover = function() {mouseOver()};
+document.getElementById("demo").onmouseout = function() {mouseOut()};
 
 function mouseOver() {
     document.getElementById("demo").style.color = "red";
